@@ -1,0 +1,610 @@
+@font-face {
+  font-family: About;
+  src: url(/Fonts/Cultures.ttf);
+}
+
+body {
+  background: #ffffff;
+  color: #898989;
+  font-family: 'Poppins', helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  color: #292929;
+  font-weight: 600;
+}
+
+h4 {
+  color: #292929;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a {
+  color: #292929;
+  text-decoration: none !important;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover {
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover, a:focus {
+
+  color: red;
+  text-decoration: underline;
+}
+
+nav ul li a {
+  padding: 2px 0 0 0;
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+p {
+  margin: 25px 0;
+  padding: 0;
+  font-size: 15px;
+  color: #999999;
+  line-height: 28px;
+}
+
+::-moz-selection {
+  background: #b8a07e;
+  color: #fff;
+}
+
+::selection {
+  background: #b8a07e;
+  color: #fff;
+}
+
+.btn {
+  background: #333;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+}
+
+.padDiv {
+  padding: 30px 20px;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 0;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 0.1em;
+  padding-left: 10px;
+  margin: 0 0 25px 0;
+  line-height: 14px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.paddsection {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.paddsections {
+  padding-top: 90px;
+  padding-bottom: 90px !important;
+}
+
+.hvr-shutter-in-horizontal::before {
+  background: #333;
+}
+
+.hvr-shutter-in-horizontal:hover {
+  background: #b8a07e;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Navigation Bar Main Top
+/*-----------------------------------------------------------------------------------*/
+
+nav {
+  position: fixed;
+  background: #fff;
+  z-index: 1000;
+  width: 100%;
+  padding: 20px;
+  display: none;
+  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+}
+
+.nav-menu {
+  float: right;
+  line-height: 32px;
+  margin-bottom: 0;
+  padding-top: 16px;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  padding: 2px 0 0 0;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #999999;
+  font-family: 'Poppins', helvetica;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h2 {
+  font-family: "About";
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+.logo h2:hover {
+  color: lightseagreen;
+  transition: 0.3s;
+}
+
+.responsive {
+  display: none;
+  font-size: 23px;
+}
+
+.active {
+  color: #afafaf;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*  Header
+/*-----------------------------------------------------------------------------------*/
+
+#header {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home-bg.jpg");
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  background-position: center center;
+  /* Centers the image */
+  background-size: cover;
+  /* Scales the image to cover the entire header */
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#header .header-content {
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-content p {
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: #0b0a0a;
+  background-color: #faf6f7;
+  border-color: #F85C70;
+  font-size: 12px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #f63750;
+  border-color: #f62b45;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+}
+
+.btn-rounded {
+  border-radius: 100px;
+}
+
+.ion-android-document {
+  padding-right: 0.5rem !important;
+  font-size: 20px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  Aout-us
+/*-----------------------------------------------------------------------------------*/
+
+#about {
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  padding-top: 190px;
+}
+
+#about .div-img-bg {
+  padding-bottom: 30px;
+  border: 20px solid darkcyan;
+}
+
+#about .about-img img {
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -06px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#about .div-img-bg{
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -10px;
+  margin-left: 10px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+#about .about-descr .p-heading {
+  font-family:"About",sans-serif;
+  font-size: 29px;
+  text-align: justify;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: darkcyan;
+  
+}
+
+#about .about-descr .separator {
+  max-width: 100%;
+  margin-bottom: 0;
+  text-align: justify;
+  color: b;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*   Madhana Kokilan Skills Known for Service
+/*-----------------------------------------------------------------------------------*/
+
+#services {
+  background: #f7f7f7;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.owl-item {
+  float: left;
+}
+.services-block span {
+  margin: 10px 0;
+  position: relative;
+  font-size: 13px;
+  color: darkcyan;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+}
+
+.services-block .separator {
+  margin: 0;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.services-block i {
+  font-size: 44px;
+  color: darkcyan;
+  line-height: 44px;
+}
+
+
+.services-carousel  .owl-stage-outer {
+  overflow: hidden;
+}
+
+.services-carousel .owl-dots {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.services-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  border: 0;
+  padding: 0 !important;
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.services-carousel .owl-dot.active {
+  background-color: darkcyan;
+}
+
+.owl-nav {
+  display: none;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Madhana Kokilan Projects Journal ( Presentation Style Referenced form External site)
+/*-----------------------------------------------------------------------------------*/
+
+/* General Container Style */
+#journal .container {
+  margin-bottom: 50px;
+}
+#journal{
+  background: gainsboro;
+}
+/* Flexbox Layout for Journal Block */
+.journal-block .row {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Prevent wrapping to the next line */
+  gap: 20px;
+  /* Space between items */
+  overflow-x: auto;
+  /* Allows horizontal scrolling if needed */
+}
+
+/* Style for Each Journal Item */
+.journal-info {
+  flex: 1 1 24%;
+  /* Each item takes up approximately 24% of the container width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: beige;
+  /* Light background for contrast */
+  padding: 10px;
+  /* Padding inside each journal item */
+  border-radius: 8px;
+  /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  overflow: hidden;
+  /* Ensure content doesn’t overflow */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width and height */
+}
+
+/* Image Style */
+.journal-info img {
+  width: 100%;
+  /* Makes the image fit the width of the container */
+  height: auto;
+  /* Maintains the image's aspect ratio */
+  border-bottom: 2px solid #ddd;
+  /* Bottom border to separate image and text */
+}
+
+/* Text Style */
+.journal-txt {
+  padding: 10px;
+  /* Padding around the text */
+}
+
+.journal-txt h4 {
+  margin: 0;
+  /* Removes default margin */
+  font-size: 18px;
+  /* Adjust as needed */
+}
+
+.journal-txt p.separator {
+  margin-top: 10px;
+  /* Space between title and paragraph */
+  font-size: 14px;
+  /* Adjust text size */
+  color: #555;
+  /* Text color */
+}
+
+/* Ensure the container width is sufficient for the items */
+.journal-block {
+  width: 100%;
+  overflow: hidden;
+  /* Hide any content that might overflow */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Madhana Kokilan Contact
+/*-----------------------------------------------------------------------------------*/
+
+#contact {
+  height: auto;
+  width: 100%;
+}
+
+.contact-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-details li {
+  padding-bottom: 10px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+}
+.btn-send{
+  background-color: darkcyan;
+}
+
+
+#contact  #sendmessage {
+  color: #18d26e;
+  border: 1px solid #18d26e;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+#contact  #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+  display: block;
+}
+
+#contact .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Portfolio Footer
+/*-----------------------------------------------------------------------------------*/
+
+#footer {
+  background: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer p {
+  font-family: "About", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: darkcyan;
+}
+.list-social li button {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.ion-social-linkedin {
+  color: royalblue;
+  font-size: 40px;
+}
+
+.ion-social-github {
+  color: black;
+  font-size: 40px;
+}
+
+
+
